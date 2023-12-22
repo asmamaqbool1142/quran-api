@@ -1,0 +1,16 @@
+{
+  "name": "QuranAI",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "setup": "npm install && npm run setup:server && npm run setup:app",
+    "setup:server": "cd server && npm install express cors dotenv @anthropic-ai/sdk",
+    "setup:app": "cd app && npm install expo@latest && npx expo install react react-native react-dom react-native-web @expo/metro-runtime expo-status-bar expo-constants expo-font react-native-safe-area-context @react-native-async-storage/async-storage @expo-google-fonts/amiri",
+    "server": "cd server && node index.js",
+    "app": "cd app && npx expo start",
+    "start": "concurrently -n server,app -c yellow,cyan \"npm run server\" \"npm run app\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}

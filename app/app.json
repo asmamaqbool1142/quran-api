@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "Noor",
+    "slug": "noor-quran-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0F1B3D",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.noor"
+    },
+    "android": {
+      "package": "com.yourcompany.noor"
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-status-bar",
+      "expo-font"
+    ]
+  }
+}
