@@ -1,19 +1,14 @@
-# backend/quran_loader.py
 import json
+from pathlib import Path
 
 def load_quran():
-    with open("quran.json", "r", encoding="utf-8") as f:
-        data = json.load(f)
 
-    verses = []
-    # Go through each surah and each ayah
-    for surah in data["data"]["surahs"]:
-        for ayah in surah["ayahs"]:
-            verses.append({
-                "surah": surah["number"],
-                "ayah": ayah["numberInSurah"],
-                "text": ayah["text"]
-            })
+    base_dir = Path(__file__).resolve().parent.parent
+    file_path = base_dir / "data" / "quran.json"
 
-    print(f"{len(verses)} verses loaded from quran.json")
+    with open(file_path, "r", encoding="utf-8") as f:
+        verses = json.load(f)
+
+    print(f"{len(verses)} verses loaded")
+
     return verses
