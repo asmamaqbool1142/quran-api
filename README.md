@@ -48,3 +48,12 @@ app/index.js     app entry point
 The app gets Quran text from the public Quran API and keeps the AI layer separate from the frontend. The server is where the Anthropic key lives, so the app itself does not need the key.
 
 This is a personal project and it is still being shaped as I use it more in real life. I am keeping the code straightforward and easy to change.
+
+<img width="3680" height="2360" alt="image" src="https://github.com/user-attachments/assets/98b9cdd5-8d29-45d5-9ffd-6d43c8888a30" />
+
+<img width="1170" height="2532" alt="image" src="https://github.com/user-attachments/assets/bdbcc2dc-8d48-4d0a-ba31-cd8c5a726320" />
+<img width="1170" height="2532" alt="image" src="https://github.com/user-attachments/assets/571d057e-897a-4564-9f89-c8c9c70e81f8" />
+<img width="1170" height="2532" alt="image" src="https://github.com/user-attachments/assets/1937607a-4cc7-42b1-b026-e88166bf49ea" />
+
+
+
